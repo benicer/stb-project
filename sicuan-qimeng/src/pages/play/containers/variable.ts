@@ -1,0 +1,1 @@
+export const img_focus = require("../../../assets/images/play/focus.jpg?raw");

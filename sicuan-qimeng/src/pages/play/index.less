@@ -1,0 +1,262 @@
+@import "../../configs/config.style.less";
+
+// * {
+//   border: 1px solid red;
+// }
+.focus-group {
+  .focus {
+    display: none;
+  }
+  &.focus {
+    display: block;
+  }
+  .def,
+  .foc {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  top: 610px;
+  font-weight: normal;
+  font-stretch: normal;
+  width: 1280px;
+  height: 110px;
+  background-image: url("../../assets/images/play/ico_bg.png");
+
+  .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1280px;
+    height: 9px;
+    background-color: #efe7e1;
+  }
+  .fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 9px;
+    background-color: #ffde59;
+
+    .ico {
+      position: absolute;
+      top: -6px;
+      right: -16.5px;
+      display: block;
+      width: 33px;
+      height: 18px;
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+  }
+  .btn-left {
+    position: absolute;
+    width: 33px;
+    height: 38px;
+    left: 43px;
+    top: 41px;
+    background-image: url("../../assets/images/play/ico_reverse.png");
+  }
+  .btn-right {
+    position: absolute;
+    width: 33px;
+    height: 38px;
+    left: 205px;
+    top: 41px;
+    background-image: url("../../assets/images/play/ico_speed.png");
+  }
+  .btn-center {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    left: 108px;
+    top: 27px;
+    background-image: url("../../assets/images/play/ico_pause.png");
+
+    &.play {
+      background-image: url("../../assets/images/play/ico_play.png");
+    }
+  }
+  .title {
+    position: absolute;
+    left: 502px;
+    top: 43px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #9b9b9b;
+    width: 480px;
+
+    span {
+      display: inline-block;
+    }
+    .txt {
+      color: white;
+    }
+  }
+  .time {
+    position: absolute;
+    top: 50px;
+    left: 1000px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    width: 300px;
+  }
+}
+.play-tips {
+  position: absolute;
+  left: 33px;
+  top: 29px;
+  width: 259px;
+  height: 61px;
+  background-color: #fbecbe;
+  border-radius: 10px;
+  background-image: url("../../assets/images/play/tips.png");
+}
+.pause-sign {
+  position: absolute;
+  left: 577px;
+  top: 271px;
+  width: 120px;
+  height: 120px;
+  background-image: url("../../assets/images/play/pause.png");
+}
+.episode {
+  position: absolute;
+  left: 0;
+  top: 575px;
+  width: 1280px;
+  height: 145px;
+  font-weight: normal;
+  font-stretch: normal;
+  background-image: url("../../assets/images/play/ico_bg.png");
+
+  .left-ico,
+  .right-ico {
+    position: absolute;
+    width: 21px;
+    height: 35px;
+    font-size: 46px;
+    letter-spacing: 9px;
+    color: #fdf0bc;
+  }
+  .left-ico {
+    left: 46px;
+    top: 55px;
+    background-image: url("../../assets/images/play/ico_front.png");
+  }
+  .right-ico {
+    right: 46px;
+    top: 55px;
+    background-image: url("../../assets/images/play/ico_behind.png");
+  }
+  .item-group {
+    .focus-group {
+      position: relative;
+      left: 95px;
+      top: 19px;
+      margin-right: 33px;
+      float: left;
+      background-color: #fdf0bc;
+      border: solid 2px #ffffff;
+      border-radius: 8px;
+      padding: 7px;
+      width: 174px;
+      height: 92px;
+
+      .def {
+        left: 7px;
+        top: 6px;
+        width: 174px;
+        height: 92px;
+        background-color: #ffffff;
+        border-radius: 8px;
+      }
+      .foc {
+        left: -12px;
+        top: -12px;
+      }
+      .title {
+        position: absolute;
+        z-index: 1;
+        left: 7px;
+        top: 74px;
+        width: 173px;
+        height: 25px;
+        background-color: #000000;
+        opacity: 0.5;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        .txt {
+          margin-top: 3px;
+          display: block;
+          text-align: center;
+          font-size: 18px;
+          letter-spacing: 2px;
+          color: #fefefe;
+        }
+      }
+    }
+  }
+}
+
+.episode-txt {
+  position: absolute;
+  font-weight: normal;
+  font-stretch: normal;
+
+  .item-group {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+  }
+  .item {
+    float: left;
+    width: 68px;
+    height: 39px;
+    box-shadow: inset 0px 0px 2px 0px #ffffff;
+    border-radius: 4px;
+    border: solid 2px #ffffff;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    background-image: url("../../assets/images/details/epi_def.png");
+
+    .txt {
+      position: absolute;
+      display: block;
+      top: 10px;
+      font-size: 20px;
+      width: 68px;
+      text-align: center;
+      letter-spacing: 2px;
+      color: #872500;
+      line-height: 1;
+    }
+
+    .foc {
+      left: -8px;
+      top: -8px;
+    }
+  }
+}
+
+.tips-component {
+  top: 520px !important;
+}
+
+
+.corner {
+  position: absolute;
+  left: 10px;
+}
+.cornerTopLeft {
+  top: 0;
+  left: 0;
+}

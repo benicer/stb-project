@@ -1,0 +1,56 @@
+@import "../../configs/config.style.less";
+
+// 配置面板组件
+.panel {
+  position: absolute;
+  left: 275px;
+  top: 51px;
+  width: 1017px;
+
+  .panel-heading {
+    padding: 0;
+    padding-right: 50px;
+  }
+}
+
+// 配置列表组件
+.list-group {
+  position: relative;
+  top: 140px;
+  width: 233px;
+
+  .list-groups-item {
+    position: relative;
+    left: 83px;
+    padding: 0px;
+    width: 127px;
+    height: 110px;
+    margin-bottom: 22px;
+    color: #189630;
+
+    .def {
+      width: 127px;
+      height: 110px;
+    }
+
+    .foc {
+      left: -9px;
+      top: -3px;
+    }
+
+    &.active {
+      .def {
+        display: none;
+      }
+    }
+  }
+}
+.paging {
+  color: #8a2901;
+}
+
+.thumbnail {
+  &.focus {
+    .focus(1.1);
+  }
+}

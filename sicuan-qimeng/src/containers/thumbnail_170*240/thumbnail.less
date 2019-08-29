@@ -1,0 +1,60 @@
+@import "../../configs/config.style.less";
+
+// 配置海报组件
+.thumbnail {
+  .thumbnail-size(170px; 280px;20px; 8px);
+
+  float: left;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+
+  .def {
+    .border-radius(16px);
+  }
+
+  .foc {
+    z-index: 10;
+    left: -8px;
+    top: -8px;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0px;
+    color: #8a2901;
+    overflow: hidden;
+  }
+
+  .corner {
+    position: absolute;
+    left: 10px;
+  }
+  .cornerTopLeft {
+    top: 0;
+    left: 0;
+  }
+  .cornerTopRight {
+    top: 0;
+    right: 0;
+  }
+  .cornerBottomLeft {
+    bottom: 0;
+    left: 0;
+  }
+  .cornerBottomRight {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.del {
+  // display: block;
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+  // width: 170px !important;
+  // height: 240px !important;
+  // // background-image: url("../../assets/images/record/del_cover.png");
+  // border-radius: 8px;
+}

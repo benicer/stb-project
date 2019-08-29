@@ -1,0 +1,220 @@
+@import "../../configs/config.style.less";
+
+// * {
+//   border: 1px solid red !important;
+// }
+
+.video {
+  position: absolute;
+  left: 58px;
+  top: 47px;
+  width: 744px;
+  height: 417px;
+  border-radius: 15px;
+
+  .foc {
+    left: -13px;
+    top: -12px;
+  }
+}
+.info {
+  position: absolute;
+  left: 835px;
+  top: 47px;
+  width: 1163px;
+  height: 419px;
+  font-weight: normal;
+  font-stretch: normal;
+
+  .title {
+    position: absolute;
+    top: 70px;
+    width: 435px;
+    font-family: SimHei;
+    font-size: 38px;
+    line-height: 38px;
+    letter-spacing: 0px;
+    color: #8a2901;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .label {
+    position: absolute;
+    top: 120px;
+    & > span {
+      display: inline-block;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #872500;
+    }
+
+    .line {
+      position: relative;
+      top: 2px;
+      margin: 0 7px 0 7px;
+      display: inline-block;
+      width: 2px;
+      height: 18px;
+      background-image: url("../../assets/images/details/line.png");
+    }
+  }
+  .des {
+    position: absolute;
+    top: 164px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #872500;
+    width: 387px;
+    height: 120px;
+    // overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+
+    .item {
+      position: absolute;
+      right: 35px;
+      bottom: -3px;
+      width: 26px;
+      height: 22px;
+    }
+  }
+}
+
+.btns {
+  position: absolute;
+  top: 308px;
+  font-weight: normal;
+  font-stretch: normal;
+
+  .item {
+    display: block;
+    float: left;
+    width: 111px;
+    height: 41px;
+    margin-right: 20px;
+  }
+  .foc {
+    left: -8px;
+    top: -8px;
+  }
+}
+
+.center {
+  position: absolute;
+  left: 58px;
+  top: 501px;
+  font-weight: normal;
+  font-stretch: normal;
+
+  .title {
+    position: absolute;
+    width: 133px;
+    height: 45px;
+    background-image: url("../../assets/images/details/tips_hot.png");
+  }
+
+  .to-front,
+  .to-behind {
+    position: absolute;
+    top: 10px;
+  }
+  .to-behind {
+    left: 1148px;
+  }
+
+  .item-group {
+    position: absolute;
+    left: 59px;
+    width: 1280px;
+  }
+  .item {
+    top: 5px;
+    width: 159px;
+    height: 33px;
+    margin-right: 19px;
+    text-align: center;
+    border-radius: 8px;
+    float: left;
+    background-image: url("../../assets/images/details/tab_btn_bg.png");
+    .txt {
+      display: block;
+      margin-top: 8px;
+
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #8a2901;
+    }
+  }
+}
+
+.floor {
+  position: absolute;
+  left: 58px;
+  top: 568px;
+  width: 1280px;
+}
+
+// 配置海报组件
+.thumbnail {
+  float: left;
+  margin-right: 33px;
+
+  .thumbnail-size(205px; 109px;20px; 8px);
+
+  &.focus {
+    .focus(1.1);
+  }
+  .def {
+    .border-radius(8px);
+  }
+  .foc {
+    left: -10px;
+    top: -9px;
+    width: 227px;
+    height: 132px;
+  }
+
+  .caption {
+    overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+
+    .title {
+      margin-top: 5px;
+      width: 205px;
+      font-size: 18px;
+    }
+    padding: 0px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-image: url("../../assets/images/details/title_bg.png");
+  }
+}
+
+.corner {
+  position: absolute;
+  left: 10px;
+}
+.cornerTopLeft {
+  top: 0;
+  left: 0;
+}
+.cornerTopRight {
+  top: 0;
+  right: 0;
+}
+.cornerBottomLeft {
+  bottom: 0;
+  left: 0;
+}
+.cornerBottomRight {
+  bottom: 0;
+  right: 0;
+}

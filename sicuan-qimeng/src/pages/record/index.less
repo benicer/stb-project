@@ -1,0 +1,141 @@
+@import "../../configs/config.style.less";
+
+// 配置面板组件
+.panel {
+  position: absolute;
+  left: 53px;
+  top: 128px;
+  width: 1250px;
+
+  .panel-heading {
+    padding: 0;
+    padding-right: 50px;
+  }
+}
+
+// 配置列表组件
+.list-groups {
+  position: relative;
+  left: 53px;
+  top: 38px;
+
+  .list-group-items {
+    float: left;
+    position: relative;
+    padding: 0px;
+    width: 212px;
+    height: 54px;
+    margin-right: 25px;
+    list-style: none;
+
+    &.enable {
+      .ena {
+        display: block;
+      }
+      .def {
+        display: none !important;
+      }
+    }
+    &.focus {
+      .foc {
+        display: block;
+      }
+    }
+  }
+
+  .foc {
+    position: absolute;
+    left: -6px;
+    top: -10px;
+    display: none;
+  }
+
+  .ena {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    display: none;
+  }
+}
+
+// 配置海报组件
+.thumbnail {
+  float: left;
+  .thumbnail-size(247px; 170px;20px; 8px);
+  margin-right: 53px;
+  margin-bottom: 10px;
+
+  &.focus {
+    .focus(1.1);
+  }
+  .def {
+    .border-radius(8px);
+  }
+  .foc {
+    left: -8px;
+    top: -8px;
+  }
+  &.del {
+    .del-def {
+      display: block !important;
+    }
+  }
+  &.del.focus {
+    .del-def {
+      display: none;
+    }
+    .del-foc {
+      display: block !important;
+    }
+  }
+  .del-def,
+  .del-foc {
+    display: none;
+    position: absolute;
+    left: 85px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    color: #8a2901;
+  }
+
+  .corner {
+    position: absolute;
+    left: 10px;
+  }
+  .cornerTopLeft {
+    top: 0;
+    left: 0;
+  }
+  .cornerTopRight {
+    top: 0;
+    right: 0;
+  }
+  .cornerBottomLeft {
+    bottom: 0;
+    left: 0;
+  }
+  .cornerBottomRight {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.btn-del {
+  margin-left: 290px;
+  list-style: none;
+  display: block;
+  width: 84px;
+  height: 40px;
+
+  .foc {
+    left: 0px;
+    top: 0px;
+  }
+}

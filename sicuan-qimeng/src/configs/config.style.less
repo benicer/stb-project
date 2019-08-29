@@ -1,0 +1,105 @@
+@import "../../node_modules/bootstrap-epg/less/bootstrap-epg.less";
+
+.border-radius(@border_radius:0px) {
+  border-radius: @border_radius;
+  -ms-border-radius: @border_radius;
+  -webkit-border-radius: @border_radius;
+}
+
+.focus(@sacle:1.02,  @color: #fff, @shadow: #fff) {
+  // border: 2px solid @color;
+  // box-shadow: 0px 0px 13px @shadow;
+  // -ms-box-shadow: 0px 0px 13px @shadow;
+  // -webkit-box-shadow: 0px 0px 13px @shadow;
+
+  // border-radius: @border_radius;
+  // -ms-border-radius: @border_radius;
+  // -webkit-border-radius: @border_radius;
+
+  transform: scale(@sacle);
+  -ms-transform: scale(@sacle);
+  -webkit-transform: scale(@sacle);
+
+  z-index: 10;
+}
+
+// @rate:1.2;
+@rate: 1;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  line-height: 1;
+  background-color: transparent;
+}
+
+#page,
+.content,
+html,
+body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+}
+
+// focus component
+.item {
+  position: relative;
+
+  .def,
+  .foc,
+  .act {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .foc,
+  .act,
+  .del {
+    visibility: hidden;
+    display: none;
+  }
+  .foc{
+    z-index: 10;
+  }
+  .del{
+    z-index: 5;
+  }
+  
+  &.focus {
+    .foc {
+      visibility: visible !important;
+      display: block !important;
+    }
+  }
+  &.active {
+    .act {
+      visibility: visible !important;
+      display: block !important;
+    }
+  }
+  &.delete {
+    .del {
+      visibility: visible !important;
+      display: block !important;
+    }
+  }
+}
+.page-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1280px;
+  height: 720px;
+}
+
+.panel{
+  box-shadow: none;
+  -webkit-box-shadow:none;
+}

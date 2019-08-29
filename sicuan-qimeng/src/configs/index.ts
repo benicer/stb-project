@@ -1,0 +1,1 @@
+export { Tools } from "./config.tool";
